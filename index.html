@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="WorldWide development international web site">
+    <meta name="description" content="You need to get the best web site ever? 'Apache' WorldWide Company will do it for you! Just visit our web site
+    or make a call 0800 555-55-55 and became a part of the list of our clients">
+    <title>Apache Development</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet/less" href="css/style.less" type="text/css">
+    <script src="lib/less.min.js" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Astloch:700&subset=latin' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="img/icon.png">
+
+</head>
+<body>
+<div id="back" class="col-lg-10 col-lg-push-1"></div>
+<header>
+
+    <div class="container col-lg-8 col-lg-push-3">
+
+    <div id="logo" class="col-lg-2 col-lg-push-3">
+        <svg width="300" height="100">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(155,0,0);stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:.9" />
+                    <stop offset="100%" style="stop-color:rgb(100,0,0);stop-opacity:.7" />
+                </linearGradient>
+            </defs>
+            <circle cx="40" cy="40" r="30" stroke="black" stroke-width="2" fill="url(#grad1)" />
+            <text fill="url(#grad2)" font-size="85" font-family='Astloch', cursive; x="10" y="70">Apache</text>
+       </svg>
+    </div>
+        <div id="buttons">
+            <button id='logIn' class="btn btn-success" data-toggle="modal" data-target="#modalLogIn">Log in</button>
+            <button id="signIn" class="btn btn-warning" data-toggle="modal" data-target="#modalSignIn">Sign in</button>
+        </div>
+    </div>
+</header>
+<nav class="container col-lg-10 col-lg-push-1">
+    <div class="row">
+        <div class="col-lg-10 col-lg-push-1">
+        <ul class="menu">
+        <li class="menu_name col-lg-2"><a href="" class="menu_name">HOME</a></li>
+        <li class="menu_name col-lg-3"><a href="" class="menu_name">OUR PROJECTS</a>
+            <ul class="menu_name_menu">
+                <li><a href="">Ukraine</a></li>
+                <li><a href="">Spain</a></li>
+                <li><a href="">Australia</a></li>
+                <li><a href="">USA</a></li>
+                <li><a href="">France</a></li>
+                <li><a href="">All</a></li>
+            </ul>
+        </li>
+        <li class="menu_name col-lg-3"><a href="" class="menu_name">OUR PARTNERS</a>
+        </li>
+        <li class="menu_name col-lg-2"><a href="" class="menu_name">FAQ</a>
+        </li>
+        <li class="menu_name col-lg-2"><a href="" class="menu_name">CONTACTS</a>
+        </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="modal fade" id="modalLogIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modalLabel1">Log In</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalSignIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modalLabel2">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="vendor/jquery.js" type="text/javascript"></script>
+<script src="vendor/bootstrap.min.js" type="text/javascript"></script>
+<script src="app/index.js" type="text/javascript"></script>
+</body>
+</html>

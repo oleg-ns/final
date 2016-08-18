@@ -1,0 +1,32 @@
+{
+  "name": "final_project",
+  "version": "0.0.1",
+  "description": "Brain Acadamy Graduation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oleg-ns/final"
+  },
+  "scripts": {
+    "start_server": "node/server.js"
+  },
+  "author": "Gubarev Oleg",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "bootstrap": "^3.3.7",
+    "cssnano": "^3.7.3",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-extend-config": "^0.9.5",
+    "grunt-postcss": "^0.8.0",
+    "grunt-spritesmith": "^6.3.1",
+    "pixrem": "^3.0.1"
+  },
+  "dependencies": {
+    "grunt": "0.4.5"
+  }
+}

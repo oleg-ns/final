@@ -1,0 +1,50 @@
+#logo {
+  margin-top: 10px;
+}
+#back {
+  background: linear-gradient(to bottom left, #c5bfbf, gray);
+  position: absolute;
+  height: 1000px;
+}
+#buttons {
+  margin-top: 10px;
+  float:right;
+}
+.menu {
+  position:relative;
+  li:hover .menu_name_menu {
+    display:block;
+  }
+  .menu_name {
+    list-style:none;
+    font-family:Chewy, sans-serif;
+    float:left;
+    font-size:20px;
+    padding-right:20px;
+    padding-top:10px;
+    text-decoration:transparent;
+
+    .menu_name_menu {
+      position: absolute;
+      top: 35px;
+      list-style: none;
+      padding: 10px;
+      margin-top: 5px;
+      text-align: center;
+      text-decoration: none;
+      display: none;
+      a {
+        font-size: 20px;
+        font-family:Chewy, sans-serif;
+        list-style: none;
+        color: red;
+        padding-right: 10px;
+        padding-left: 10px;
+        }
+      a:hover {
+        color: blue;
+        text-decoration: none;
+      }
+    }
+  }
+}
