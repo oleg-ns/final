@@ -1,50 +1,157 @@
+.is_overlay {
+  display: block;
+  width: 100%;
+  height: 110%;
+
+  video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+  }
+}
+
 #logo {
   margin-top: 10px;
 }
-#back {
+
+/*#back {
   background: linear-gradient(to bottom left, #c5bfbf, gray);
-  position: absolute;
+  position: fixed;
+  top: 0px;
   height: 1000px;
+  opacity: 0.7;
+  z-index: -99;
+}*/
+header > div {
+  position: relative;
 }
 #buttons {
+  position: absolute;
   margin-top: 10px;
-  float:right;
+  margin-left: 80%;
 }
+
 .menu {
-  position:relative;
+  z-index: 50;
+  position: relative;
   li:hover .menu_name_menu {
-    display:block;
+    display: block;
   }
   .menu_name {
-    list-style:none;
-    font-family:Chewy, sans-serif;
-    float:left;
-    font-size:20px;
-    padding-right:20px;
-    padding-top:10px;
-    text-decoration:transparent;
+    list-style: none;
+    font-family: Chewy, sans-serif;
+    float: left;
+    font-size:25px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-decoration: transparent;
+    color: #640000;
 
     .menu_name_menu {
-      position: absolute;
-      top: 35px;
+      position: fixed;
+      top: 155px;
+      right: 15%;
+      left: 18%;
       list-style: none;
+      height: 30px;
       padding: 10px;
       margin-top: 5px;
       text-align: center;
       text-decoration: none;
       display: none;
       a {
-        font-size: 20px;
-        font-family:Chewy, sans-serif;
+        font-size: 25px;
+        font-family: Chewy, sans-serif;
         list-style: none;
-        color: red;
+        color: #ed992d;
+
         padding-right: 10px;
-        padding-left: 10px;
-        }
+        padding-left: 25px;
+        float: left;
+      }
       a:hover {
-        color: blue;
+        color: #640000;
         text-decoration: none;
       }
     }
+  }
+}
+
+#slider {
+  position: static;
+  margin-top: 200px;
+  z-index: -50;
+  a {
+    padding-top: 25%;
+  }
+}
+#about {
+    font-family: Chewy, sans-serif;
+    font-size: 20px;
+    color: #640000;
+}
+.h1 {
+  font-family: Chewy, sans-serif;
+  text-align: center;
+  color: #ed992d;
+}
+#offices {
+  position: relative;
+
+  h1 {
+    margin-left: -8%;
+  }
+  #kiev {
+    width: 30%;
+    height: 15em;
+    margin-left: -3%;
+  }
+  #barcelona {
+    width: 30%;
+    height: 15em;
+    margin-left: 3%;
+  }
+  #paris {
+    width: 30%;
+    height: 15em;
+    margin-left: 3%;
+    }
+  p {
+    display: none;
+    font-family: Chewy, sans-serif;
+    font-size: 18px;
+    color: #640000;
+    text-align: center;
+    position: absolute;
+  }
+  img:hover {
+    padding: 2px 2px;
+  }
+  }
+#contacts {
+  h3 {
+    font-family: Chewy, sans-serif;
+    color: #ed992d;
+  }
+  img {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+  }
+  p {
+    position: absolute;
+    margin-left: 2%;
+    font-family: Chewy, sans-serif;
+    color: black;
+    font-size: 20px;
+  }
+  td {
+    width: 220px;
   }
 }

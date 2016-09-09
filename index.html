@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content="WorldWide development international web site">
     <meta name="description" content="You need to get the best web site ever? 'Apache' WorldWide Company will do it for you! Just visit our web site
     or make a call 0800 555-55-55 and became a part of the list of our clients">
@@ -15,74 +15,79 @@
 
 </head>
 <body>
-<div id="back" class="col-lg-10 col-lg-push-1"></div>
+<div class="is_overlay">
+    <video width="300" height="150" autoplay="autoplay" loop="loop" poster="">
+        <source src="img/Clouds_2.mp4" type="video/mp4">
+    </video>
+</div>
+
 <header>
 
-    <div class="container col-lg-8 col-lg-push-3">
-
-    <div id="logo" class="col-lg-2 col-lg-push-3">
-        <svg width="300" height="100">
-            <defs>
-                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
-                    <stop offset="100%" style="stop-color:rgb(155,0,0);stop-opacity:1" />
-                </linearGradient>
-                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:.9" />
-                    <stop offset="100%" style="stop-color:rgb(100,0,0);stop-opacity:.7" />
-                </linearGradient>
-            </defs>
-            <circle cx="40" cy="40" r="30" stroke="black" stroke-width="2" fill="url(#grad1)" />
-            <text fill="url(#grad2)" font-size="85" font-family='Astloch', cursive; x="10" y="70">Apache</text>
-       </svg>
-    </div>
-        <div id="buttons">
+    <div class="container col-xs-10">
+        <div id="buttons" class="col-xs-4 col-xs-offset-1">
             <button id='logIn' class="btn btn-success" data-toggle="modal" data-target="#modalLogIn">Log in</button>
             <button id="signIn" class="btn btn-warning" data-toggle="modal" data-target="#modalSignIn">Sign in</button>
         </div>
+        <div id="logo" class="col-xs-4 col-xs-push-2">
+            <svg width="300" height="100">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1"/>
+                        <stop offset="100%" style="stop-color:rgb(155,0,0);stop-opacity:1"/>
+                    </linearGradient>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:.9"/>
+                        <stop offset="100%" style="stop-color:rgb(100,0,0);stop-opacity:.7"/>
+                    </linearGradient>
+                </defs>
+                <circle cx="40" cy="40" r="30" stroke="black" stroke-width="2" fill="url(#grad1)"/>
+                <text fill="url(#grad2)" font-size="85" font-family='Astloch' , cursive; x="10" y="70">Apache</text>
+            </svg>
+
+        </div>
+
     </div>
 </header>
-<nav class="container col-lg-10 col-lg-push-1">
+<nav class="container col-xs-10 col-xs-push-1">
     <div class="row">
-        <div class="col-lg-10 col-lg-push-1">
+
         <ul class="menu">
-        <li class="menu_name col-lg-2"><a href="" class="menu_name">HOME</a></li>
-        <li class="menu_name col-lg-3"><a href="" class="menu_name">OUR PROJECTS</a>
-            <ul class="menu_name_menu">
-                <li><a href="">Ukraine</a></li>
-                <li><a href="">Spain</a></li>
-                <li><a href="">Australia</a></li>
-                <li><a href="">USA</a></li>
-                <li><a href="">France</a></li>
-                <li><a href="">All</a></li>
-            </ul>
-        </li>
-        <li class="menu_name col-lg-3"><a href="" class="menu_name">OUR PARTNERS</a>
-        </li>
-        <li class="menu_name col-lg-2"><a href="" class="menu_name">FAQ</a>
-        </li>
-        <li class="menu_name col-lg-2"><a href="" class="menu_name">CONTACTS</a>
-        </li>
+            <li class="menu_name col-xs-2"><a href="" class="menu_name">HOME</a></li>
+            <li class="menu_name col-xs-3"><a href="" class="menu_name">OUR OFFICES</a>
+                <ul class="menu_name_menu">
+                    <li><a href="">Ukraine</a></li>
+                    <li><a href="">Spain</a></li>
+                    <li><a href="">France</a></li>
+                </ul>
+            </li>
+            <li class="menu_name col-xs-3"><a href="" class="menu_name">OUR PARTNERS</a>
+            </li>
+            <li class="menu_name col-xs-2"><a href="" class="menu_name">FAQ</a>
+            </li>
+            <li class="menu_name col-xs-2"><a href="" class="menu_name">CONTACTS</a>
+            </li>
         </ul>
-        </div>
     </div>
 </nav>
-
 
 
 <div class="modal fade" id="modalLogIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="modalLabel1">Log In</h4>
             </div>
             <div class="modal-body">
-                ...
+                <form action="node/database.json" method="POST" id="logForm" class="form-group">
+                    <input type="text" name="name" placeholder="Enter your login" class="form-control"><br/>
+                    <input type="password" name="name" placeholder="Enter your password" class="form-control"><br/>
+                </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="submit" form="logForm" class="btn btn-success">Confirm</button>
             </div>
         </div>
     </div>
@@ -91,19 +96,156 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="modalLabel2">Modal title</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modalLabel2">Sign In</h4>
             </div>
             <div class="modal-body">
-                ...
+                <form action="node/database.json" method="POST" id="signForm" class="form-group">
+                    <input type="text" name="name" placeholder="Enter your login" class="form-control"><br/>
+                    <input type="password" name="name" placeholder="Enter your password" class="form-control"><br/>
+                    <input type="checkbox" class="form-inline" id="agree"> I agree with rules of confidence
+                </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="submit" form="signForm" class="btn btn-success">Confirm</button>
             </div>
         </div>
     </div>
 </div>
+<br/>
+<section id="slider">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div class="carousel slide" data-ride="carousel" id="carousel" data-interval="3500">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class=""></li>
+                        <li data-target="#carousel" data-slide-to="1" class=""></li>
+                        <li data-target="#carousel" data-slide-to="2" class="active"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item">
+                            <a href="#barcelona"><img src="img/barcelona.jpg" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#kiev"><img src="img/kiev.jpg" alt=""></a>
+                        </div>
+                        <div class="item active">
+                            <a href="#paris"><img src="img/Paris.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <a href="#carousel" class="left carousel-control" data-slide="prev">prev</a>
+                    <a href="#carousel" class="right carousel-control" data-slide="next">next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <article>
+        <div class="container">
+            <div class="row">
+                <heading>
+                    <h1 class="h1">ABOUT US</h1>
+                </heading>
+                <br/>
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p id="about">'Apache' Development - is the company of the best specialists in creating and
+                        developing
+                        different
+                        kind of web sites.
+                        Huge number of market's leaders in different ways are using our web products and growing up
+                        their
+                        profit.
+                        We can offer unusual ways for your busines processes, make your client be a part of your
+                        business
+                        solution.
+                        All you need - is a make a call or fill our form an you'll be a part of the list of our
+                        clients</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <div class="container">
+            <div class="row">
+                <br/>
+                <div id="offices" class="col-xs-11 col-xs-offset-1">
+                    <h1 class="h1">OUR OFFICES</h1>
+                        <img src="img/kiev.jpg" alt=""id="kiev">
+                        <p class="kievAbout col-xs-11">The main office is situated in Kiev. 400 specialists in all IT sectors are
+                            ready to turn your brave idea into real project. We have an experience in more then 100 projects
+                        </p>
+                        <img src="img/barcelona.jpg" alt="" id="barcelona">
+                        <p class="barcelonaAbout col-xs-11">Barcelona - the
+                            city of amazing architecture and fountains. Our specialists are the same.
+                            250 specialists are ready to make your World Wide project as colorful and amazing like city
+                            where they live.
+                        </p>
+                        <img src="img/Paris.jpg" alt="" id="paris">
+                        <p class="parisAbout col-xs-11">Our french office is situated in the city center of Paris. Over 9 million
+                            tourists visit Paris each year, many of them by business trip.
+                            A lot of business contacts guarantee high quality and efficiency of result
+                        </p>
+                </div>
+            </div>
+        </div>
+
+    </article>
+</section>
+<br/>
+<br/>
+<section id="contacts">
+    <div class="container">
+        <div class="row">
+            <h1 class="h1">CONTACTS</h1>
+            <table>
+                <tr>
+                    <td><h3>Kiev</h3></td>
+                </tr>
+                <tr>
+                    <td><img src="img/phone.png" alt="">
+                        <p>+380(44)9876543</p></td>
+
+                    <td><img src="img/facebook.png" alt="">
+                        <p><a href="http://facebook.com" target="_blank">Facebook page</a></p></td>
+                </tr>
+                <tr>
+                    <td><h3>Barcelona</h3></td>
+                </tr>
+                <tr>
+                    <td><img src="img/phone.png" alt="">
+                        <p>+31(05)59876543</p></td>
+                    <td><img src="img/email.png" alt="">
+                        <p><a href="mailto:info@apachedevelopment.com">Mail us</a></p></td>
+                    <td><img src="img/facebook.png" alt="">
+                        <p><a href="http://facebook.com" target="_blank">Facebook page</a></p></td>
+                </tr>
+                <tr>
+                    <td><h3>Paris</h3></td>
+                </tr>
+                <tr>
+                    <td><img src="img/phone.png" alt="">
+                        <p>+6(055)59876543</p></td>
+                    <td><img src="img/email.png" alt="">
+                        <p><a href="mailto:info@apachedevelopment.com">Mail us</a></p></td>
+                    <td><img src="img/facebook.png" alt="">
+                        <p><a href="http://facebook.com" target="_blank">Facebook page</a></p></td>
+                </tr>
+                <tr>
+                    <td><h3>New York</h3></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+</section>
+<footer>
+
+</footer>
 
 <script src="vendor/jquery.js" type="text/javascript"></script>
 <script src="vendor/bootstrap.min.js" type="text/javascript"></script>
